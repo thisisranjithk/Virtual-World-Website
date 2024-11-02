@@ -31,3 +31,47 @@
     background-cover: center;
   }
 }
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-bottom {
+  display: none;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg);
+}
+
+.open .hamburger-middle {
+  transform: rotate(-45deg);
+}
