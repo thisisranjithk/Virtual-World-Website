@@ -1,8 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@layer components {
+  .btn {
+    @apply tracking-widest duration-150 uppercase font-sans text-xl py-3 px-10 border-2 border-black font-bold hover:bg-black hover:text-white;
+  }
+}
+
+.creations-item-container {
+  @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:space-y-0 md:flex-row md:space-x-8;
+}
+
+.item-text {
+  @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 text-white text-2xl uppercase font-light font-sans group-hover:scale-110 group-hover:text-black;
+}
 
 #hero {
   /* height: 90vh; */
