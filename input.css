@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+#hero {
+  /* height: 90vh; */
+  background-image: url("../images/desktop/hero.jpg");
+  background-repeat: no-repeat;
+  background-cover: center;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-cover: center;
+  }
+}
